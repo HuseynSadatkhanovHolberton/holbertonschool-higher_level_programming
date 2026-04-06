@@ -2,4 +2,5 @@
 str1 = "Welcome to "
 str2 = "Holberton School!"
 
-print("{}{}".format(str1, str2))
+# Complete this line
+print(f"{str1}{str2}")
