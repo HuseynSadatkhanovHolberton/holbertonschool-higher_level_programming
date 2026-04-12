@@ -1,16 +1,9 @@
 #!/usr/bin/python3
-'''This module returns
-the list of available
-attributes and methods of an object.'''
+'''This module inherits list.'''
 
 
-def lookup(obj):
-    '''Returns the list of
-    available attributes and
-    methods of an object'''
+class MyList(list):
+    '''Inherits list.'''
 
-    atr = dir(obj)
-    atr_list = []
-    for i in atr:
-        atr_list.append(i)
-    return atr_list
+    def print_sorted(self):
+        print(sorted(self))
